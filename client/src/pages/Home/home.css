@@ -1,0 +1,22 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    /* height: calc(100vh - 133.3px); */
+    background-color: #efefef; /* 100% of the viewport height */
+  }
+  
+  .random-text-1 {
+    font-size: 2.2em;
+    color: #303030;
+    /* Your existing styles for random-text */
+    margin: 10px; /* Add margin if needed */
+  }
+
+  .random-text-2{
+    color: #585858;
+    margin: 10px;
+    font-size: 1.2em;
+  }

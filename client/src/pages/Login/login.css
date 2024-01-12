@@ -1,0 +1,127 @@
+/* login.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.login-content {
+  max-width: 350px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: #303030;
+  font-weight: 500;
+}
+
+p{
+  color: #585858;
+}
+
+.continue-with-google {
+
+  margin: 20px 0;
+  border: 1px solid #b1b1b1;
+  width: 100%;
+}
+
+ 
+.g-btn{
+  width: 100%;
+  height: 100%;
+  padding: 8px 60px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: none;
+  /* width: inherit; */
+} 
+
+
+.or-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.or-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.or-text {
+  color: #777;
+  /* font-weight: bold; */
+}
+
+.email-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: small;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus{
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(78, 78, 249, 0.5);
+}
+
+.login-button {
+  /* background-color: rgb(49, 49, 252); */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #737373;
+}
+
+
+
+.signup-message {
+  margin-top: 20px;
+  color: #333;
+  font-size: small;
+}
+
+.signup-message a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-message a:hover {
+  text-decoration: underline;
+}
+
