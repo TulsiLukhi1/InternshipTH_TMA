@@ -5,8 +5,8 @@ body{
 li,a{
     font-family: "Montserrat" , sans-serif;
     font-weight: 800;
-    font-size: 12px;
-    color:#666666;
+    font-size: 14px;
+    /* color:#666666; */
     text-decoration : none;
 }
 
@@ -15,33 +15,9 @@ a:hover{
   color: black;
 }
 
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
+.navbar-li{
+  color: #666666;
 }
-
-.appName::before {
-  content: ''; /* Empty content for pseudo-element */
-  background-image: url('../../../public/images/logo.png');
-  background-size: contain; /* Ensure the logo fits within the specified dimensions */
-  width: 40px; /* Adjusted logo size */
-  height: 40px;
-  margin-right: 8px;
-  margin-left: 50px;
-  display: inline-block;
-  }
-  
-  .appName {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    color: #333333;
-    /* margin: 0 16px; */
-  }
-
-
 
   
 .hdr {
@@ -63,23 +39,21 @@ nav li {
 }
 
 .btn {
-  background-color: #000000; /* Added button background color */
+  background-color: #000000; 
   color: #fcfcfc;
-  padding: 8px 16px;
+  padding: 10px 30px;
   border: none;
   border-radius: 10px;
   margin-right: 30px;
   cursor: pointer;
-  font-size: 14px; /* Adjusted font size */
+  font-size: 16px;
 }
 
-button:hover {
+.btn:hover {
   background-color: #efefef; 
-  /* Added hover effect color */
   color: #333333;
 }
 
-/* Media query for responsive design (adjust as needed) */
 @media (max-width: 768px) {
   header {
     flex-direction: column;

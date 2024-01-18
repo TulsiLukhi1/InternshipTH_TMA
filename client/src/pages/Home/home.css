@@ -5,18 +5,38 @@
     justify-content: center;
     height: 90vh;
     /* height: calc(100vh - 133.3px); */
-    background-color: #efefef; /* 100% of the viewport height */
+    background-color: #efefef; 
   }
   
   .random-text-1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     color: #303030;
-    /* Your existing styles for random-text */
-    margin: 10px; /* Add margin if needed */
+    margin: 10px; 
   }
 
   .random-text-2{
     color: #585858;
     margin: 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+  }
+
+
+  .home-btn{
+    margin: 20px;
+    width: 10%;
+    background-color: #ef5757;
+    color: black;
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .home-btn:hover{
+    background-color: black;
+    color:white;
   }

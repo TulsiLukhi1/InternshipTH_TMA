@@ -7,3 +7,53 @@
 }
 
 
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .appName::before {
+    content: ''; 
+    background-image: url('../../public/images/logo.png');
+    background-size: contain; 
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    margin-left: 50px;
+    display: inline-block;
+    }
+    
+    .appName {
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* color: #333333; */
+      height: 100%;
+      /* margin: 0 16px; */
+    }
+
+
+    .adminName::after{
+      content:'Admin';
+      font-size: 0.6em;
+      color: #ff5757;
+      margin-left: 5px;
+    }
+  
+  
+.break-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #c9c9c9;
+  margin: 0 10px;
+}
+
+.ad-container{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}

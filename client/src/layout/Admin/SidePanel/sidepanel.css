@@ -1,0 +1,62 @@
+
+.side-panel {
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.sidepanel-container{
+  margin-bottom: 20px;
+}
+
+  .side-panel:first-child{
+    margin-bottom: 20px;
+  }
+  
+  .inline-con{
+    display: flex;
+    align-items: center;
+  }
+  .img {
+    width: 50px;
+  }
+
+  .link{
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color:#888888;
+    text-decoration : none;    
+  }
+
+  .link-div{
+    margin: 20px;
+    
+  }
+
+  .link:hover{
+    color: #ef5757;
+  }
+
+
+  .workspace{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #666666;
+    /* #d6d4d4 */
+  }
+
+  .workspace:hover{
+    color: #000000;
+  }
+
+  .workspace::before{
+    content: ''; 
+    background-image: url('../../../../public/images/building-icon.png');
+    background-size: contain; 
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }

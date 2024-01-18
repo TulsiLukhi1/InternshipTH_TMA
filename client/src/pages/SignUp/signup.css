@@ -1,86 +1,197 @@
-/* step1.css */
-
 .step-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin-top: 20px;
+}
 
+.step-heading {
+  color: #303030;
+  font-weight: 500;
+  margin-right: 10px;
+  max-width: 800px;
+  width: 100%;
+  margin: 8px;
+  font-size: 1.8em;
+}
 
-  h2 {
-    color: #303030;
-    font-weight: 500;
-    
-  }
-  
-  p{
-    color: #585858;
-  }
+.step-para {
+  color: #585858;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
 
-  .step-heading {
-    display: inline; /* or use display: inline-block; */
-    margin-right: 10px; 
-    max-width: 800px ;
-    width: 100% ;/* Optional: Adjust the margin as needed for spacing */
-  }
-  
-  .step-para {
-    display: inline; /* or use display: inline-block; */
-  }
-  
-  .step-content {
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 50px;
-    text-align: center;
-    margin: 0 auto; /* Center the content horizontally */
-  }
-  
-  .step-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-size: small;
-    flex-direction: column;
-    align-items: start;
-  }
-  
-  .step-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    color: #333;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .step-input:focus {
-    outline: none;
-    border-color: blue;
-    box-shadow: 0 0 5px rgba(78, 78, 249, 0.5);
-  }
-  
-  .step-error {
-    color: #ff0000;
-    font-size: small;
-  }
-  
-  .step-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .step-button:hover {
-    background-color: #737373;
-  }
-  
+.step-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.step-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 16px;
+  text-align: left;
+}
+
+.step-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(78, 78, 249, 0.5);
+}
+
+.step-error {
+  color: #ff0000;
+  font-size: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.step-button {
+  background-color: #ff5757;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.step-button:hover {
+  background-color: #737373;
+}
+
+.step-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 8px; /* Adjust margin as needed */
+}
+
+.step-dropdown {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-input {
+  margin-right: 8px;
+}
+
+.step-checkbox label {
+  color: #333;
+  font-size: 14px;
+}
+
+.language-tile {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.language-tile h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.language-tile p {
+  color: #585858;
+  font-size: 16px;
+}
+
+.final-step-submit {
+  background-color: #ff5757;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.final-step-submit:hover {
+  background-color: #0056b3;
+}
+
+.step-info {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.step-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #585858;
+}
+
+.back-message a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  font-size: small;
+  /* font-weight: bold; */
+}
+
+.back-message a:hover {
+  cursor: pointer;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+}
+
+.back-btn {
+  background-color: #000000;
+  color: #fcfcfc;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.back-btn:hover{
+  background-color: #737373;
+}

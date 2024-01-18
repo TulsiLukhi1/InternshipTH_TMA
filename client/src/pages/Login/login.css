@@ -8,7 +8,7 @@
 }
 
 .login-content {
-  max-width: 350px;
+  max-width: 500px;
   width: 100%;
   padding: 20px;
   background-color: #fff;
@@ -16,20 +16,31 @@
   text-align: center;
 }
 
-h2 {
+
+.login-heading {
   color: #303030;
   font-weight: 500;
+  margin-right: 10px; 
+  max-width: 800px ;
+  width: 100% ;
+  margin: 8px;
+  font-size: 1.8em;
 }
 
-p{
+.login-para {
   color: #585858;
+  margin-bottom: 20px;
+  font-size: 1.2em;
 }
+
+
 
 .continue-with-google {
 
   margin: 20px 0;
   border: 1px solid #b1b1b1;
   width: 100%;
+  font-size: 20px;
 }
 
  
@@ -50,12 +61,6 @@ p{
   margin: 20px 0;
 }
 
-.or-line {
-  flex-grow: 1;
-  height: 1px;
-  background-color: #ccc;
-  margin: 0 10px;
-}
 
 .or-text {
   color: #777;
@@ -69,14 +74,14 @@ p{
   align-items: flex-start;
 }
 
-label {
+.cus-label {
   display: block;
   margin-bottom: 8px;
   color: #333;
-  font-size: small;
+  font-size: 14px;
 }
 
-input {
+.cus-input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -86,15 +91,15 @@ input {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-input:focus{
+.cus-input:focus{
   outline: none;
   border-color: blue;
   box-shadow: 0 0 5px rgba(78, 78, 249, 0.5);
 }
 
 .login-button {
-  /* background-color: rgb(49, 49, 252); */
-  background-color: #007bff;
+  background-color: #ff5757;
+  /* background-color: #007bff; */
   color: #fff;
   padding: 10px;
   border: none;

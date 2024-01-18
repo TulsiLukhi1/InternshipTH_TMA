@@ -30,31 +30,42 @@ const Step2 = ({onNext,onBack}) => {
     };
   
     return (
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
+      <div className="step-container">
+        <form onSubmit={handleSubmit(onSubmit)} className="step-content">
+           <h2 className="step-heading">Let's Tailor Your Developer Profile</h2>
+        <p className="step-para">Share your role and programming skills </p>
+        <div className="step-label">
           <label>Developer Role/Position</label>
-          <select {...register('position', { required: 'Position is required' })}>
-          <option value="" disabled>Select a role</option>
-          {developerRoles.map((role) => (
-            <option key={role} value={role}>{role}</option>
-          ))}
-
-        </select>
-        {errors.position && <span>{errors.position.message}</span>}
-
+          <select {...register('position', { required: 'Position is required' })} className="step-dropdown">
+            <option value="" disabled>Select a role</option>
+            {developerRoles.map((role) => (
+              <option key={role} value={role}>{role}</option>
+            ))}
+          </select>
+          {errors.position && <span className="step-error">{errors.position.message}</span>}
         </div>
-        <div>
+        <div className="step-label">
           <label>Programming Language/Skill Expertise</label>
           {programmingLanguages.map((language) => (
-          <div key={language}>
-            <input type="checkbox" {...register('skills', { required: 'Skills are required' })} value={language} />
-            <label>{language}</label>
-          </div>
-        ))}
-        {errors.skills && <span>{errors.skills.message}</span>}
+            <div key={language} className="step-checkbox">
+              <input
+                type="checkbox"
+                {...register('skills', { required: 'Skills are required' })}
+                value={language}
+                id={`checkbox-${language}`}
+                className="checkbox-input"
+              />
+              <label htmlFor={`checkbox-${language}`}>{language}</label>
+            </div>
+          ))}
+          {errors.skills && <span className="step-error">{errors.skills.message}</span>}
         </div>
-        
-      </form>
+        <div className="step-buttons">
+          <button type="button" onClick={onBack} className="back-btn">Back</button>
+          <button type="submit" className="step-button">Next</button>
+        </div>
+            </form>
+      </div>
     );
 }
 

@@ -15,20 +15,20 @@ const Navbar = ({showNav,showAdminbtn}) => {
       <nav style={{visibility: showNav ? 'visible' : 'hidden'}}>
         <ul className='nav__links'>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about"  className='navbar-li'>About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact"  className='navbar-li'>Contact</Link>
           </li>
         </ul>
       </nav>
 
       {showAdminbtn ? (
-        <Link to="/adminlogin">
+        <Link to="/admin/login">
           <button className='btn'>Admin Login</button>
         </Link>
       ) : (
-        <Link to="/login">
+        <Link to="/user/login">
           <button className='btn'>Login</button>
         </Link>
       )}

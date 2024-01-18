@@ -25,24 +25,26 @@ const Login = () => {
             <button className='g-btn'>Continue with Google</button>
           </div>
           <div className="or-container">
-          <div className="or-line"></div>
+          <div className="break-line"></div>
           <div className="or-text">or</div>
-          <div className="or-line"></div>
+          <div className="break-line"></div>
         </div>
           <div className="email-section">
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email" className='cus-label'>Email Address</label>
             <input
               type="email"
               id="email"
               value={email}
+              className='cus-input'
               onChange={(e) => setEmail(e.target.value)}
             />
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password" className='cus-label'>Password</label>
 
             <input
               type="password"
               id="password"
               value={password}
+              className='cus-input'
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
@@ -50,7 +52,7 @@ const Login = () => {
             Login
           </button>
           <p className="signup-message">
-          Don't have an account? <a href="/signup">Sign up</a>
+          Don't have an account? <a href="/user/signup">Sign up</a>
         </p>
         </div>
             </div>

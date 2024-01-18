@@ -1,0 +1,88 @@
+
+.user-panel {
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #2c2c2c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+.userpanel-container{
+    margin-bottom: 20px;
+  }
+  
+    .user-panel:first-child{
+      margin-bottom: 20px;
+    }
+    
+    .inline-con{
+      display: flex;
+      align-items: center;
+    }
+
+
+.userpanel-breakline{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #505050;
+    margin: 0 10px;
+}
+
+
+.user-link{
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#939393;
+    text-decoration : none;    
+  }
+
+  .userpanel-link-div{
+    margin: 20px;
+    
+    
+  }
+
+  .user-link:hover{
+    color: #ef5757;
+  }
+
+
+  .task,.inbox{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #959494;
+    margin: 20px;
+    font-weight: 500;
+    /* #d6d4d4 */
+  }
+
+  .task,.inbox:hover{
+    color: white;
+  }
+
+  .task::before{
+    content: ''; 
+    background-image: url('../../../../public/images/task-icon.png');
+    background-size: contain; 
+    width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+
+  .inbox::before{
+    content: ''; 
+    background-image: url('../../../../public/images/inbox-icon.png');
+    background-size: contain; 
+    width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+    display: inline-block;
+  }

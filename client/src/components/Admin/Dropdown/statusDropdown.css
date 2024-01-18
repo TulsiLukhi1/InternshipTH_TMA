@@ -1,0 +1,66 @@
+.status-dropdown {
+    position: relative;
+  }
+  
+  .status-toggle {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+  }
+  
+  .status-option {
+    cursor: pointer;
+    color: #666666;
+    padding: 5px;
+  }
+
+
+  .status-toggle{
+    color: white;
+    width: 7em;
+    opacity: 0.8;
+  }
+  
+  .status-toggle.pending {
+    background-color: rgba(42, 126, 195, 0.2)
+    ;
+    color: #2a7ec3;
+    font-weight: 600;
+    /* color: white; */
+
+  }
+  
+  .status-toggle.inprogress {
+    background-color: rgba(243, 243, 3, 0.4)
+    ; 
+    color: #dbb314;
+    font-weight: 600;
+
+  }
+  
+  .status-toggle.done {
+    background-color: rgba(48, 224, 48, 0.2)
+    ; 
+    color: #30e030;
+    font-weight: 600;
+
+  }
+  
+  .status-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .status-option:hover {
+    background-color: #f0f0f0;
+  }
+  
