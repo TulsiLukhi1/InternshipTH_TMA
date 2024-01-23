@@ -1,12 +1,11 @@
 const express = require('express')
 const cors = require('cors');
 
-var corsOptions = {
-    origin : 'https://localhost:8081'
-};
 const app = express()
 
-app.use(cors(corsOptions));
+app.use(cors({
+  origin : 'http://localhost:3000'
+}));
 
 app.use(express.json());
 
@@ -47,6 +46,7 @@ app.get('/',(req,res)=>{
 
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
+require('./app/routes/task.routes')(app);
 const PORT = process.env.PORT || 4000;
 
 
